@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(black, purple, white) center/cover no-repeat;
+  height: 100%;
+  width: 100%;
+}
+body section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 1000px;
+}
+body section div.button-generate-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  background: #fff;
+  transition: all 0.3s;
+  margin-bottom: 40px;
+}
+body section div.button-generate-info span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+body section div.button-generate-info:active {
+  border: 1px solid #000;
+}
+body section div.button-generate-info:hover {
+  cursor: pointer;
+}
+body section div.informations {
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  background: #fff;
+  border-radius: 3px;
+  padding: 12px;
+  width: 300px;
+  height: 300px;
+}
+body section div.informations.active {
+  opacity: 1;
+}
+body section div.informations p {
+  color: #000;
+}
+
+/*# sourceMappingURL=landing-page.css.map */
